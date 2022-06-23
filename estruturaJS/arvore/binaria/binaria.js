@@ -46,11 +46,11 @@
         this.pecorrerEmOrdemNo(this.noRaiz, recursao);
     }   
 
-    pecorrerEmOrdemNo(no, recursao){
-        if (no != null) {//primeiro verificamos se o nó é diferente de nulo, aqui fica o gatilho de interrupção da recursao
-            this.pecorrerEmOrdemNo(no.esquerda, recursao);//por recursao chamamos a mesma função passando o filho da esquerda
-            recursao(no.chave); //ao chegar na ponta será executado essa recursao
-            this.pecorrerEmOrdemNo(no.direita, recursao);//vez da direita
+    pecorrerEmOrdemNo(noRaiz, recursao){
+        if (noRaiz != null) {//primeiro verificamos se o nó é diferente de nulo, aqui fica o gatilho de interrupção da recursao
+            this.pecorrerEmOrdemNo(noRaiz.esquerda, recursao);//por recursao chamamos a mesma função passando o filho da esquerda
+            recursao(noRaiz.chave); //ao chegar na ponta será executado essa recursao
+            this.pecorrerEmOrdemNo(noRaiz.direita, recursao);//vez da direita
         }
     }
 
@@ -59,12 +59,48 @@
        this.pecorrerPreOrdemNo(this.noRaiz, recursao);
     }
 
-    pecorrerPreOrdemNo(no, recursao){
-        if (no != null) {
-            recursao(no.chave);
-            this.pecorrerPreOrdemNo(no.esquerda, recursao);
-            this.pecorrerPreOrdemNo(no.direita, recursao);
+    pecorrerPreOrdemNo(noRaiz, recursao){
+        if (noRaiz != null) {
+            recursao(noRaiz.chave);
+            this.pecorrerPreOrdemNo(noRaiz.esquerda, recursao);
+            this.pecorrerPreOrdemNo(noRaiz.direita, recursao);
         }
+    }
+
+    pecorrerPosOrdem(recursao){
+        this.pecorrerPosOrdemNo(this.noRaiz, recursao);
+    }
+
+    pecorrerPosOrdemNo(noRaiz, recursao ){
+        if (noRaiz != null) {
+            this.pecorrerPosOrdemNo(noRaiz.esquerda, recursao);
+            this.pecorrerPosOrdemNo(noRaiz.direita, recursao);
+            recursao(noRaiz.chave);
+        }
+    }
+
+    minimo(recursao){
+        this.minimoNo(this.noRaiz);
+    }
+
+    minimoNo(no){
+        let noCorrente = no;
+        while (noCorrent != null && noCorrent.esquerda != null) {
+            noCorrente = noCorrente.esquerda;
+        }
+        return noCorrente;
+    }
+
+    maximo(recursao){
+        this.maximoNo(this.noRaiz);
+    }
+
+    maximoNo(no){
+        let noCorrent = no;
+        while (noCorrent != null && noCorrent.esquerda != null) {
+            noCorrent = noCorrent.esquerda;
+        }
+        return noCorrent;
     }
 }
 
@@ -93,3 +129,4 @@ const printNo = (valor) => console.log(valor); //esta é a funcao callback, func
 arvore.pecorrerEmOrdem(printNo);
 
 arvore.pecorrerPreOrdem(printNo);
+arvore.pecorrerPosOrdem(printNo);
