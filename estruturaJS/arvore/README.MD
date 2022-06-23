@@ -11,3 +11,7 @@
   - **subárvore**: composto por um nó e seus descendentes.
   - **profundidade do nó** : corresponde ao número de ancestrais
   - **Altura da árvore** : é = a profundidade máxima dos nós. a altura tbm pode ser dividida em níveis.
+  - **Pecorrer uma árvore**: é visitar todos os nós. há várias formas de fazer isto...
+    - em ordem: visita em ordem crescente, ou seja, a visita será do menor ao maior. aplicação: ordenar a árvore
+    - pre ordem: visita o nó antes de visitar os descendestes, aplicacao exibir um doc estruturado
+    - pos ordem:
