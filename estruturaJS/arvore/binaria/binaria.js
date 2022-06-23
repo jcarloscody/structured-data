@@ -1,4 +1,4 @@
-export class No{
+ class No{
     constructor(chave){
         this.chave = chave;
         this.esquerda = null;
@@ -8,16 +8,16 @@ export class No{
 
 
 
-export default class ArvorePesquisaBinaria{
+  class ArvorePesquisaBinaria{
     //a função de comparação passaremos pelo construtor da classe, pq com isto daremos a opção de trabalharmos com vários tipos de tipos
     constructor(funcaoDeComparacao){
         this.funcaoDeComparacao = funcaoDeComparacao;
         this.noRaiz = null;
     }
-
+    
     inserir(chave){
         if (this.noRaiz == null) { //verifica se é o primeiro nó da árvore, ou seja, a primeira vez que estamos adicionando
-            this.noRaiz == new No(chave);
+            this.noRaiz = new No(chave);
         } else { //caso já tenha o nó raiz na árvore, usaremos um método auxiliar para adicionar os valores filhos
             this.inserirNo(this.noRaiz, chave);
         }
@@ -41,6 +41,18 @@ export default class ArvorePesquisaBinaria{
             }
         }
     }
+
+    pecorrerEmOrdem(recursao){
+        this.pecorrerEmOrdemNo(this.noRaiz, recursao);
+    }   
+
+    pecorrerEmOrdemNo(no, recursao){
+        if (no != null) {//primeiro verificamos se o nó é diferente de nulo, aqui fica o gatilho de interrupção da recursao
+            this.pecorrerEmOrdemNo(no.esquerda, recursao);//por recursao chamamos a mesma função passando o filho da esquerda
+            recursao(no.chave); //ao chegar na ponta será executado essa recursao
+            this.pecorrerEmOrdemNo(no.direita, recursao);//vez da direita
+        }
+    }
 }
 
 
@@ -59,3 +71,10 @@ function funcaoDeComparacao(a, b) {
 }
 const arvore = new ArvorePesquisaBinaria(funcaoDeComparacao);
 arvore.inserir(11);
+arvore.inserir(10);
+arvore.inserir(14);
+arvore.inserir(1);
+arvore.inserir(117);
+
+const printNo = (valor) => console.log(valor); //esta é a funcao callback, funcao recursiva, apenas faz printar os valores que ela irá pecorrer
+arvore.pecorrerEmOrdem(printNo);
