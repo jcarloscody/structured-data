@@ -53,6 +53,19 @@
             this.pecorrerEmOrdemNo(no.direita, recursao);//vez da direita
         }
     }
+
+    pecorrerPreOrdem(recursao){//a diferença entre pre e em, é que no pre ele visita a raiz primeiro para depois os filhos
+        //enquanto q o em ordem visita a esquerda, depois a raiz, depois a direita
+       this.pecorrerPreOrdemNo(this.noRaiz, recursao);
+    }
+
+    pecorrerPreOrdemNo(no, recursao){
+        if (no != null) {
+            recursao(no.chave);
+            this.pecorrerPreOrdemNo(no.esquerda, recursao);
+            this.pecorrerPreOrdemNo(no.direita, recursao);
+        }
+    }
 }
 
 
@@ -78,3 +91,5 @@ arvore.inserir(117);
 
 const printNo = (valor) => console.log(valor); //esta é a funcao callback, funcao recursiva, apenas faz printar os valores que ela irá pecorrer
 arvore.pecorrerEmOrdem(printNo);
+
+arvore.pecorrerPreOrdem(printNo);
