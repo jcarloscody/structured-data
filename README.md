@@ -9,4 +9,4 @@ inteiros não-negativos.
 - notação de complemento de um
 - notação de complemento de dois
 
-pag 31
+pag 37
