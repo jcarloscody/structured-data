@@ -11,3 +11,5 @@
   - cheio: ultimo - primeiro
   - vazio: ultimo == primeiro
 
+<img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/2-Fila/img/fila.png">
+<img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/2-Fila/img/fila_inserir.png">

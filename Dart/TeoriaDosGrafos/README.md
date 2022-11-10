@@ -1,7 +1,7 @@
  # Teoria dos Grafos
  https://www.youtube.com/watch?v=T6yKp82k9vM&list=PLrOyM49ctTx-xtyVeuO7ylclgXHd4ws9a&index=2&t=85s&ab_channel=ProfessorDouglasMaioli
 
-
+<img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/TeoriaDosGrafos/img/grafos.png">
 
 ## Pontes de Konigsberg
 - Encontrar um caminho que passe pelas 7 pontes, de forma que passe uma única vez em cada ponte.
@@ -16,6 +16,14 @@
 - numeros de arestas: |a|
 - grau do vertice x: d(v). é o numero de vezes que as arestas incidem sobre o vertice v é chamado grau do vértice v, simbolizado por d(v). este grau significará cada coisa a depender de tipo fim. se alisa p ex quantidade de jogos de uma sala entao isto indicará as quantidades de jogos daquela sala.
 
+<img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/TeoriaDosGrafos/img/oquegrafo.png">
+<img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/TeoriaDosGrafos/img/oquegrafo2.png">
+<img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/TeoriaDosGrafos/img/grau.png">
+
+<br/>
+<br/>
 
 ## Aplicações da teria
 - uma empresa de logistica
+
+<img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/TeoriaDosGrafos/img/aplicacao_grafos.png">
