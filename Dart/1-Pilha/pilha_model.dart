@@ -1,4 +1,6 @@
-class Pilha<Tipo> {
+import '../interface/generic.dart';
+
+class Pilha<Tipo> extends Generic<Tipo> {
   late int _tamanho;
   var _vetor = <Tipo>[];
   int _maximoElementos;
@@ -8,25 +10,13 @@ class Pilha<Tipo> {
     _tamanho = -1;
   }
 
-  bool estaCheia() {
-    return _vetor.length == _maximoElementos;
-  }
+  // void inserir(Tipo item) {
 
-  bool estaVazia() {
-    return _vetor.length == 0;
-  }
+  // }
 
-  void inserir(Tipo item) {
-    if (estaCheia()) {
-      print("A pilha está cheia");
-    } else {
-      _vetor.add(item);
-      _tamanho++;
-    }
-  }
-
+  @override
   Tipo? remover() {
-    if (estaVazia()) {
+    if (estaVazio()) {
       print("Pilha vazia, sem elementos");
       return null;
     } else {
@@ -37,8 +27,9 @@ class Pilha<Tipo> {
     }
   }
 
+  @override
   void imprimir() {
-    if (!estaVazia()) {
+    if (!estaVazio()) {
       var i = 0;
       for (var element in _vetor) {
         print("${i++}- ${element}");
@@ -48,5 +39,25 @@ class Pilha<Tipo> {
 
   int qualTamanho() {
     return _tamanho;
+  }
+
+  @override
+  bool estaCheio() {
+    return _vetor.length == _maximoElementos;
+  }
+
+  @override
+  bool estaVazio() {
+    return _vetor.length == 0;
+  }
+
+  @override
+  void inserir(t) {
+    if (estaCheio()) {
+      print("A pilha está cheia");
+    } else {
+      _vetor.add(t);
+      _tamanho++;
+    }
   }
 }
