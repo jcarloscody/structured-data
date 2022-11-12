@@ -1,5 +1,5 @@
 import '../../interface/generic.dart';
-import 'no.dart';
+import '../../interface/no.dart';
 
 class Pilha<Tipo> extends Generic<Tipo> {
   Pilha();
