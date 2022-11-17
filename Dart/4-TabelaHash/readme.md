@@ -16,3 +16,16 @@
      -  indica que está alocando memoria desnecessárias
 -  Funçao Hash:
    -  Chave mod% Tamanho = int
+
+
+## Tratamento de Colisões
+Colisão acontece quando duas chaves produzem por meio da funcao de espalhamento o mesmo valor para inserir. Quando isto acontece o que devemos fazer?
+Duas formas:
+- Encadeamento Exterior ou separado:
+  - usamos lista encadeadas: para cada posição terá um ponteiro para uma lista encadeada
+- Encadeamento Interior ou Aberto   
+  - Heterogen: 
+  - Homogeneo<teste linear>
+
+### Encadeamento Exterior
+### Encadeamento Interior Heterogeneo
