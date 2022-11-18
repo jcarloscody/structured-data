@@ -25,7 +25,8 @@ Duas formas:
   - usamos lista encadeadas: para cada posição terá um ponteiro para uma lista encadeada
 - Encadeamento Interior ou Aberto   
   - Heterogen: 
-  - Homogeneo<teste linear>
+  - Homogeneo teste linear
 
 ### Encadeamento Exterior
 ### Encadeamento Interior Heterogeneo
+### Teste Linear - Encadeamento Interior homogeneo
