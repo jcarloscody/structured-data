@@ -27,3 +27,55 @@
 - uma empresa de logistica
 
 <img src="https://raw.githubusercontent.com/jcarloscody/structured-data/main/Dart/TeoriaDosGrafos/img/aplicacao_grafos.png">
+
+## TERMINOLOGIA
+### **`Grafo Direcionado`**
+- é um grafo onde cada aresta tem uma orientação
+
+### Laço
+- é uma aresta que liga um vertice a ele mesmo
+
+### Multigrafo
+- dois vertices podem estar ligados por mais de uma aresta, nesse caso dizemos que estas sao arestas paralelas ou multiplas.
+
+### Grafo Simples
+- grafo sem laços ou multigrafo
+
+### Ordem de um Grafo
+- quantidade de vertices que ele possui
+
+### Grau de um Vertice de um Grafo Direcionado
+- cada vertice tera:
+  - grau de entrada: quantidade de arestas que entram no vertice.
+  - grau de saida: quantidade de arestas que saem de um vertice.
+- se somar ge + gs será o valor dos graus de um vertice ñ direcionado
+
+
+### Mais sobre os Graus dos Vertices
+- um vértice de grau 0 é dito isolado
+- um vertice de grau 1 é dito pendente ou folha ou terminal
+
+### Grafo Completo
+- todos os vertices estao se conectados
+
+### Subgrafo
+
+
+### Passeio
+- é uma sequencia de arestas do tipo (v1, v2)(v2,v3)...
+
+
+### Trilha
+- se todas as arestas do passeio sao distintas 
+- Fechada: uma trilha onde o ponto de inicio é = ao ponto de termino ai é fechada.
+
+### Caminho
+- uma tilha q nao repete vertice(a excecao do ultimo e primeiro) 
+- ou seja `nao pode repetir vertice e aresta` a exceção quando começa/termina no mesmo local
+
+### Ciclo
+- UM caminho que comeca/termina no mesmo local
+
+
+### Grafo Conexo
+- se existe um caminho entre par de vertices, caso contrario desconexo
