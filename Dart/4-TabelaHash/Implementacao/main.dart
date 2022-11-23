@@ -1,5 +1,5 @@
+import '../../models/aluno.dart';
 import 'SemColisao/hash.dart';
-import 'models/aluno.dart';
 
 void main(List<String> args) {
   //SEM COLISAO

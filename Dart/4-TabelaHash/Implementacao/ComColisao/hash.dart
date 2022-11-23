@@ -1,4 +1,4 @@
-import '../models/aluno.dart';
+import '../../../models/aluno.dart';
 
 class Hash {
   int _maxItens;

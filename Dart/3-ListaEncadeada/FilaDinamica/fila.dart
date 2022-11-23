@@ -1,5 +1,5 @@
 import '../../interface/generic.dart';
-import '../../interface/no.dart';
+import '../../models/no.dart';
 
 class Fila<Tipo> extends Generic<Tipo> {
   No<Tipo>? _primeiro;
