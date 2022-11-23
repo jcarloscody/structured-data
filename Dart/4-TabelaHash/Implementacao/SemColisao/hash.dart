@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import '../models/aluno.dart';
 
 class Hash {
@@ -28,6 +27,10 @@ class Hash {
   }
 
   void inserir(Aluno aluno) {
+    if (estaCheio()) {
+      print('ESTA CHEIO');
+      return;
+    }
     int local = funcaoHash(aluno);
     _estrutura.insert(local, aluno);
     _quantidadeItens++;
