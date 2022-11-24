@@ -79,3 +79,12 @@
 
 ### Grafo Conexo
 - se existe um caminho entre par de vertices, caso contrario desconexo
+
+
+### Representação de um Grafo
+- representação gráfica
+- Relação de vertices e arestas
+- matriz de adjacencias: é representado por uma linha e uma coluna dessa matriz e o elemento Aij informa a quantidade de arestas que conecta o vértice da linha i com o vertice da coluna j. 
+  - se for um **grafo ñ orientado** então a parte de baixo é igual a de cima.
+  - se **orientado o grafo**: como a orientação importa, o elemento Aij informa a quantidade de arestas que sai do vertice da linha i e entra no vertice da coluna j.
+- listas de adjacencia: para cada vertice do grafo, fazemos uma lista de todos os outros vertices com os quais ele tem uma aresta
