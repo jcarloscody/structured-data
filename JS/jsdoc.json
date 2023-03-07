@@ -1,0 +1,20 @@
+{
+	"source": {
+		"include": [
+			"."
+		],
+		"includePattern": ".js$",
+		"excludePattern": "(node_modules/|docs)"
+	},
+	"plugins": [
+		"plugins/markdown"
+	],
+	"recurseDepth": 10,  
+	"opts": {
+		"encoding": "utf8",
+		"readme": "./readme.md",
+		"destination": "./docs/",
+		"recurse": true,
+		"verbose": true
+	}
+}
