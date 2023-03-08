@@ -4,7 +4,12 @@
 </br>
 </br>
 
-- https://www.multisim.com/content/CvQ84B5cgiwPhXQwL49epL/aula1/open/
+> Atividades:
+```
+usar o aplicativo até o nível 40 com 3 estrelas
+```
+
+[Aula Diagrama](https://www.multisim.com/content/CvQ84B5cgiwPhXQwL49epL/aula1/open/)
 
 > Circuito Lógico
 - é a implementação física através de transistores das funções lógicas
